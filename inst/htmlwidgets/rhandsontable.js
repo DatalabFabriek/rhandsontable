@@ -51,6 +51,7 @@ HTMLWidgets.widget({
 
       instance.hot.params = x;
       instance.hot.params.filters = true;
+      instance.hot.params.dropdownMenu = true;
       instance.hot.updateSettings(x);
     } else {  // create new instance
       if (x.debug && x.debug > 0) {
@@ -69,6 +70,7 @@ HTMLWidgets.widget({
 
       instance.hot.params = x;
       instance.hot.params.filters = true;
+      instance.hot.params.dropdownMenu = true;
       instance.hot.updateSettings(x);
 
       var searchField = document.getElementById('searchField');
