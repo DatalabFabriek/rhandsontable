@@ -27,3 +27,7 @@ dependencies:
    version: 0.3.7
    src: "htmlwidgets"
    stylesheet: rhandsontable.css
+ - name: jasmine
+   version: 3.7.0
+   src: "https://cdnjs.cloudflare.com/ajax/libs/jasmine/4.2.0"
+   script: jasmine.min.js
