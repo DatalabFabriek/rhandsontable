@@ -1,7 +1,7 @@
 Package: rhandsontable
 Type: Package
 Title: Interface to the 'Handsontable.js' Library
-Version: 0.3.9
+Version: 1.0.13
 Authors@R: c(
   person("Jonathan", "Owen", email = "jonathanro@gmail.com",
          role = c("aut", "cre", "cph")),
@@ -9,6 +9,8 @@ Authors@R: c(
   person("Yihui", "Xie", role = c("ctb")),
   person("Enzo", "Martoglio",
          email = "enzo@smartinsightsfromdata.com", role = c("ctb")),
+  person("Harmen", "van der Veer",
+         email = "harmen@datalab.nl", role = c("ctb")),
   person("Inberg", "Ger", role = c("ctb")),
   person("Warpechowski", "Marcin", role = c("ctb", "cph"), comment = "Handsontable.js library"),
   person("Handsoncode sp. z o.o.", role = c("ctb", "cph"), comment = "Handsontable.js library"),
