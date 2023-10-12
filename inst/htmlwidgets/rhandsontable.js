@@ -50,9 +50,10 @@ HTMLWidgets.widget({
       }
 
       instance.hot.params = x;
-      instance.hot.params.filters = true;
-      instance.hot.params.dropdownMenu = true;
+      //instance.hot.params.filters = true;
+      //instance.hot.params.dropdownMenu = true;
       instance.hot.params.licenseKey = 'non-commercial-and-evaluation';
+
       instance.hot.updateSettings(x);
     } else {  // create new instance
       if (x.debug && x.debug > 0) {
