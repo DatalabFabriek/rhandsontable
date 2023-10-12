@@ -41,9 +41,10 @@ HTMLWidgets.widget({
     }
 
     //this.afterRender(x);
+    
+    x.licenseKey = 'non-commercial-and-evaluation';
 
     this.params = x;
-    instance.hot.params.licenseKey = 'non-commercial-and-evaluation';
 
     if (instance.hot) { // update existing instance
       if (x.debug && x.debug > 0) {
