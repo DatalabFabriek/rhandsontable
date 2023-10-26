@@ -17,6 +17,9 @@ rhandsontable(
   digits = 4,
   debug = NULL,
   search = FALSE,
+  filters = TRUE,
+  dropdownMenu = TRUE,
+  licenseKey = "non-commercial-and-evaluation",
   ...
 )
 }
@@ -52,6 +55,12 @@ This can be used with shiny to tie updates to a selected table cell.}
 \item{search}{logical specifying if the data can be searched (see
 \url{https://jrowen.github.io/rhandsontable/#Customizing}
 and Shiny example in inst/examples/rhandsontable_search)}
+
+\item{filters}{boolean show filters, defaults to TRUE}
+
+\item{dropdownMenu}{boolean show the dropdown menu, defaults to TRUE}
+
+\item{licenseKey}{character the license key to use, defaults to 'non-commercial-and-evaluation'}
 
 \item{...}{passed to \code{hot_table} and to the \code{params} property of the widget}
 }

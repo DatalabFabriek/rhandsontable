@@ -23,6 +23,9 @@
 #' @param search logical specifying if the data can be searched (see
 #'   \url{https://jrowen.github.io/rhandsontable/#Customizing}
 #'   and Shiny example in inst/examples/rhandsontable_search)
+#' @param filters boolean show filters, defaults to TRUE
+#' @param dropdownMenu boolean show the dropdown menu, defaults to TRUE
+#' @param licenseKey character the license key to use, defaults to 'non-commercial-and-evaluation'
 #' @param ... passed to \code{hot_table} and to the \code{params} property of the widget
 #' @examples
 #' library(rhandsontable)
@@ -38,7 +41,7 @@ rhandsontable <- function(data, colHeaders, rowHeaders, comments = NULL,
                           useTypes = TRUE, readOnly = NULL,
                           selectCallback = FALSE,
                           width = NULL, height = NULL, digits = 4,
-                          debug = NULL, search = FALSE, ...) {
+                          debug = NULL, search = FALSE, filters = TRUE, dropdownMenu = TRUE, licenseKey = 'non-commercial-and-evaluation', ...) {
   rColHeaders = colnames(data)
   if (.row_names_info(data) > 0L)
     rRowHeaders = rownames(data)
@@ -137,9 +140,9 @@ rhandsontable <- function(data, colHeaders, rowHeaders, comments = NULL,
     height = height,
     debug = ifelse(is.null(debug) || is.na(debug) || !is.numeric(debug), 0, debug),
     search = search,
-    filters = T,
-    dropdownMenu = T,
-    licenseKey = 'non-commercial-and-evaluation'
+    filters = filters,
+    dropdownMenu = dropdownMenu,
+    licenseKey = licenseKey
   )
 
   # create widget
